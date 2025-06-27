@@ -116,6 +116,7 @@ module.exports = {
 };
 ```
 - **理解上面代码中 webpack 的执行过程**
+![Alt text](image-8.png)
 可以拷贝 build/webpack.base.conf.js 全部代码，询问AI解释一下步骤
 
 - **4、** 新建 build/webpack.dev.conf.js，定制开发环境下的webpack
