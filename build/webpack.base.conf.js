@@ -3,6 +3,8 @@ const { src, dist, PUBLIC_PATH, env } = require("./config");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
 module.exports = {
   entry: {
     app: [path.join(src, "index.js")],
@@ -19,6 +21,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(src, "index.html"),
@@ -26,5 +29,6 @@ module.exports = {
       favicon: path.join(src, "favicon.ico"),
       chunks: ["app"],
     }),
+
   ],
 };
