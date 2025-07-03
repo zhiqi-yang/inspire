@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: [path.join(src, "index.js")],
+    app: [path.join(src, "index.ts")],
   },
   devtool: "source-map",
   output: {
@@ -18,10 +18,14 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      }
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(src, "index.html"),
@@ -29,6 +33,6 @@ module.exports = {
       favicon: path.join(src, "favicon.ico"),
       chunks: ["app"],
     }),
-
+    new CleanWebpackPlugin(),
   ],
 };

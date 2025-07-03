@@ -89,3 +89,11 @@ open("http://127.0.0.1:8807");
 ![Alt text](image-12.png)
 
 ## 5. 在浏览器中访问 127.0.0.1:8807/test1.html
+![Alt text](image-13.png)
+
+## 6. 在浏览器中访问一个不存在的路径 127.0.0.1:8807/inexistence.js
+![Alt text](image-14.png)
+可以看到返回404
+
+## 7. 最后，可以在终端输入 ctrl + c 停止启动的web服务器进程
+![Alt text](image-15.png)

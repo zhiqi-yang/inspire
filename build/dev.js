@@ -3,8 +3,8 @@ const open = require("open");
 const { env, static, CONTEXT_PATH, dist } = require("./config");
 
 const app = express();
-app.use(express.static(static));
 
+app.use(express.static(static));
 app.use(express.static(dist));
 
 app.use((req, res) => {
