@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: [path.join(src, "index.ts")],
+    app: [path.join(src, "index.tsx")],
   },
   devtool: "source-map",
   output: {

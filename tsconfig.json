@@ -5,6 +5,8 @@
     "strict": true,
     "module": "esnext",
 
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
 
     "typeRoots": ["node_modules/@types"],
     "outDir": "./dist",
