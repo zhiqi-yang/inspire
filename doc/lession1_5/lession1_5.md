@@ -114,4 +114,10 @@ app.listen(8807, "0.0.0.0", function (err) {
 open("http://127.0.0.1:8807");
 
 ```
+
+### 4. 这次不用再手动调用 webpack 命令，直接运行开发环境启动脚本
+```
+npm run dev
+```
 ![Alt text](image-10.png)
+可以看到dev脚本已经自动调用 webpack 编译
