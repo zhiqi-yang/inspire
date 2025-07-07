@@ -2,9 +2,28 @@
 
 ## 1. 在 package.json 中引入 react 依赖，保存
 ```code
-    "react": "^18.0.2",
-    "react-dom": "^18.0.2"
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.5.3",
+    "open": "^8.2.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^5.0.0",
+
+    "ts-loader": "^9.5.2",
+
+    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.3.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 ```
+![Alt text](image-12.png)
+
 安装
 ```shell
 npm install
