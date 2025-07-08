@@ -31,7 +31,7 @@ export default NewDiv;
 ```code
   import NewDiv from "@/component/helloworld";
 // 1. 优先查找 `src/component/helloworld`
-// 2. 找不到时再查 `node_modules//component/helloworld`
+// 2. 找不到时再查 `node_modules/component/helloworld`
 ```
 
 
