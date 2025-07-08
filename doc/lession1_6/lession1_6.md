@@ -68,14 +68,22 @@ export default NewDiv;
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import NewDiv from "./component/helloworld";
+import NewDiv from "@/component/helloworld";
 
 const rootElement = createRoot(document.getElementById("root")!);
 rootElement.render(<NewDiv/>);
 ```
-![Alt text](image-2.png)
+![Alt text](image-15.png)
 
-## 5. 修改 src/component/helloworld.tsx 组件，把 first 改为 second，模拟日常开发过程中的版本迭代
+## 5. 保存，运行开发环境脚本
+```
+npm run dev
+```
+可以看到组件已经被正确加载显示
+
+![Alt text](image-16.png)
+
+## 6. 修改 src/component/helloworld.tsx 组件，把 first 改为 second，模拟日常开发过程中的版本迭代
 ```tsx
 import React from "react";
 
@@ -87,12 +95,16 @@ const NewDiv: React.FC = () => <div>{`hello my sceond component ${env}`}</div>;
 export default NewDiv;
 ```
 保存，发现浏览器并没有更新最新内容
-![Alt text](image-6.png)
-需要刷新页面
-![Alt text](image-7.png)
-不方便我们日常开发工作，我们可以引入 webpack 热更新插件，自动在保存时编译更新最新内容
 
-## 6. 在 package.json 文件中引入热更新依赖，ctrl + c 停止先前启动的 express 服务器，保存并安装
+![Alt text](image-6.png)
+
+需要刷新页面
+
+![Alt text](image-7.png)
+
+不方便我们日常开发工作，可以引入 webpack 热更新插件，自动在保存时编译更新最新内容
+
+## 7. 在 package.json 文件中引入热更新依赖，ctrl + c 停止先前启动的 express 服务器，保存并安装
 ```
     "webpack-hot-middleware": "^2.25.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.16",
@@ -100,7 +112,7 @@ export default NewDiv;
 ![Alt text](image-9.png)
 
 
-## 7. 在 build/webpack.dev.conf.js 中引入热更新插件
+## 8. 在 build/webpack.dev.conf.js 中引入热更新插件
 ```
 const config = require("./webpack.base.conf");
 const webpack = require("webpack");
@@ -123,15 +135,12 @@ module.exports = config;
 ![Alt text](image-11.png)
 
 
-## 8. 修改 build/dev.js 开发环境启动脚本，在服务器资源路径中加入热更新内容
+## 9. 修改 build/dev.js 开发环境启动脚本，在服务器资源路径中加入热更新内容
 ![Alt text](image-10.png)
 
 
-## 9. 重新运行开发环境启动脚本
+## 10. 重新运行开发环境启动脚本
 ```
 npm run dev
 ```
-![Alt text](image-12.png)
-
-## 10. 重新运行开发环境启动脚本
 ![Alt text](image-13.png)
