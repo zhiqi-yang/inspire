@@ -16,6 +16,13 @@ module.exports = {
     chunkFilename: "js/[name].[chunkhash:6].js",
     publicPath: PUBLIC_PATH,
   },
+  resolve: {
+    modules: [src, "node_modules"],
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    alias: {
+      "@": src,
+    },
+  },
   module: {
     rules: [
       {

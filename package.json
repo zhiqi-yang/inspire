@@ -19,11 +19,15 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-middleware": "^5.0.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.16",
 
     "ts-loader": "^9.5.2",
 
     "@types/react-dom": "^18.3.1",
     "@types/react": "^18.3.1"
+
+
   },
   "dependencies": {
     "react": "^18.3.1",

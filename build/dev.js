@@ -18,6 +18,8 @@ app.use(
   })
 );
 
+app.use(require("webpack-hot-middleware")(compiler));
+
 app.use((req, res) => {
   res.status(404).send('Not found');
 });
