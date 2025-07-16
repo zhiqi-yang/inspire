@@ -36,6 +36,8 @@
     transform: translateX(-50%);
 
     border-radius: 50%;
+
+    animation: shadow 0.8s linear infinite alternate;
   }
 
 
@@ -73,5 +75,17 @@
   to {
     top: 80%;
     transform: translate(-50%, -50%) scale(1.8, 0.4) rotate(0.75turn);
+  }
+}
+
+@keyframes shadow {
+  from {
+    width: 100%;
+  }
+  60% {
+    width: 50%;
+  }
+  to {
+    width: 30%;
   }
 }
