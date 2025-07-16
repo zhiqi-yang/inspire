@@ -24,6 +24,7 @@ npm install
 ![Alt text](image-1.png)
 
 ## 4. 在 webpack 配置文件 build/webpack.base.conf.js 中配置 scss/sass 预编译规则
+**有个印象就行，不需要一定完全理解**
 ```
       {
         test: /\.s[ac]ss$/i,
