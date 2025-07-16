@@ -290,7 +290,7 @@ export default component;
 ```
   transform: translate(-50%, -50%);
 ```
-通过 transform 属性中的 translate 把方块分别 往 X 轴移动自身宽度的 50%，往 Y 轴移动自身宽度的 50%，达到视觉居中
+通过 transform 属性中的 translate 把方块分别 往 X 轴负方向（左向）移动自身宽度的 50%，往 Y 轴负方向（向上）移动自身高度的 50%，达到视觉居中
 ```
 .frame {
   width: 400px;
