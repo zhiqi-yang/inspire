@@ -21,7 +21,7 @@ const MyReactBuilder = function() {
         container.innerHTML = '';
         container.appendChild(jsx());
       }
-  }
+    }
     
     return {
       render: (element: MyFC) => {
@@ -44,10 +44,6 @@ const MyReactBuilder = function() {
   function addScheduleRerender(func: ScheduledRerender) {
     renderQueue.push(func);
   }
-  // function addScheduleRerender(func: ScheduledRerender) {
-  //   // ... 先占位，后面再实现
-  // }
-
 
   function flushRenderQueue() {
     const queue = [...renderQueue];
