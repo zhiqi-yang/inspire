@@ -385,10 +385,14 @@ export default component;
 ## 5. 利用伪元素来实现容器内的白色方块
 
 **&** 
-表示父元素
+表示父元素，即外层的 .square
 
 **::after** 
 表示在元素内容后生成一个伪元素
+
+连起来就是 
+**.square::after**
+表示所有 class 为 .square 的元素，在内容之后都生成一个伪元素
 
 **content** 
 伪元素必须包含 content, 但可以为空字符串
