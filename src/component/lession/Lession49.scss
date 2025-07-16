@@ -1,0 +1,77 @@
+.frame {
+  width: 400px;
+  height: 400px;
+  background-color: #3498db;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow: 1px 2px 10px 0px rgb(0, 0, 0, 0.3);
+  border-radius: 6px;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.square {
+  width: 220px;
+  height: 160px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    background: #2a7aaf;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+
+    bottom: 0;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.8, 0.4) rotate(0);
+    animation: square 1.6s linear infinite;
+  }
+}
+
+@keyframes square {
+  from {
+    top: 80%;
+    transform: translate(-50%, -50%) scale(1.8, 0.4) rotate(0);
+  }
+  30% {
+    top: 62%;
+    transform: translate(-50%, -50%) scale(1, 1) rotate(0);
+  }
+  50% {
+    top: 0%;
+    transform: translate(-50%, -50%) scale(1, 1) rotate(0.3turn);
+  }
+  70% {
+    top: 62%;
+    transform: translate(-50%, -50%) scale(1, 1) rotate(0.75turn);
+  }
+  to {
+    top: 80%;
+    transform: translate(-50%, -50%) scale(1.8, 0.4) rotate(0.75turn);
+  }
+}
