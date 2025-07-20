@@ -11,6 +11,7 @@ const analyze = process.env.ANALYZE === "true";
 
 const CONTEXT_PATH = "";
 
+
 module.exports = {
   CONTEXT_PATH,
   PUBLIC_PATH: env === "development" ? "/" : "./",
