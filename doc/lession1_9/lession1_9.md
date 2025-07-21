@@ -81,7 +81,7 @@ https://example.com/path#section1
 
 ![Alt text](image-3.png)
 
-## 3. 单独新建 src/routes/lession.ts，分类存放以后我们所有的 css 100天调整训练课
+## 3. 单独新建 src/routes/lession.ts，分类存放以后我们所有的 css 100天挑战训练课
 ```tsx
 import React from "react";
 
