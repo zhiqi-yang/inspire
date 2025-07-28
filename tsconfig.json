@@ -18,12 +18,14 @@
 
     "baseUrl": ".",
 
+    "allowJs": true,
+
     "paths": {
       "@/*": ["src/*"]
     }
   },
 
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "test/util/*"],
 
   "exclude": ["node_modules"]
 }

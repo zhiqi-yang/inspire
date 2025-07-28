@@ -8,6 +8,7 @@ import lession from "./lession";
 interface RouteSource {
   component: React.LazyExoticComponent<React.ComponentType<any>>;
 }
+ 
 
 
 
@@ -37,7 +38,12 @@ const getRouteData = (): [RouteObject[], { [key: string]: RouteObject }] => {
     routeMap[k] = item;
   }
 
+  
   return [routes, routeMap];
+
+  
 };
 
 export default getRouteData;
+
+
