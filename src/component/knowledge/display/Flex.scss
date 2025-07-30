@@ -1,0 +1,36 @@
+
+.part {
+  margin: 1rem 0 4rem 0 ;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+.button {
+  background-color: #1766d3;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+}
+
+.displayAll {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  z-index: 100;
+  width: 100px;
+}
+
+.hiddenAll {
+  position: fixed;
+  right: 140px;
+  top: 60px;
+  z-index: 100;
+  width: 100px;
+}
+

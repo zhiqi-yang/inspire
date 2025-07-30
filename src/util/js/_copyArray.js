@@ -15,6 +15,7 @@ function copyArray(source, array) {
     array[index] = source[index];
   }
   return array;
+
 }
 
 module.exports = copyArray;

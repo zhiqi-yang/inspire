@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  column-gap: 10px;
+}
+
+p {
+  height: 25px;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 900;
+  color: #bd6424;
+}
+
+.container {
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 60px;
+  background-color: #1766d3;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 3px;
+
+  text-align: center;
+
+  cursor: pointer;
+}
