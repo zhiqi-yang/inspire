@@ -13,4 +13,6 @@ export default {
   "knowledge/display/flex": {
     component: React.lazy(() => import( "@/component/knowledge/display/Flex")),
   },
+
+
 };

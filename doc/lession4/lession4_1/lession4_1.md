@@ -44,6 +44,7 @@ const Title: React.FC<Props> = ({ title }) => {
     <div className={ss.title}>
       <p>11111</p>
       <div className={ss.container}>
+        2222
       </div>
     </div>
   );
@@ -106,6 +107,11 @@ npm run dev
 ```
 
 查看页面
+
+访问地址
+```
+http://127.0.0.1:8807/index.html/#/knowledge/title
+```
 
 ![Alt text](image-2.png)
 
@@ -355,6 +361,30 @@ export default Block;
 }
 ```
 
+为了方便查看效果，我们先给 MarkdownCode 配置一个路由
+
+新建 **src/routes/knowledge.ts** 文件
+```ts
+import React from "react";
+
+export default {
+
+  "knowledge/title": {
+    component: React.lazy(() => import( "@/component/knowledge/Title")),
+  },
+
+    "knowledge/markdown": {
+    component: React.lazy(() => import( "@/component/knowledge/MarkdownCode")),
+  },
+
+};
+
+
+访问地址
+```
+http://127.0.0.1:8807/index.html/#/knowledge/markdown
+```
+
 ![Alt text](image-7.png)
 
 添加 Code 样式、 字体，行高
@@ -526,5 +556,16 @@ export default {
 
 保存，更新浏览器 url
 
+访问地址
+```
+http://127.0.0.1:8807/index.html/#/knowledge/display/flex
+```
+
 ![Alt text](image-9.png)
 
+继续完成后面45个 case
+
+**src/component/display/Flex.tsx**
+```tsx
+
+```
