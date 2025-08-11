@@ -47,6 +47,28 @@ module.exports = {
           { loader: "sass-loader" },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024,
+          },
+        },
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?v=[\d\.]+)?$/,
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024,
+          },
+        },
+      },
+      {
+        test: /\.(svg)$/,
+        type: "asset/inline",
+      },
     ],
   },
   plugins: [

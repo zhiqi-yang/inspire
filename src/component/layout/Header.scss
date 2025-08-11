@@ -16,8 +16,134 @@
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1240px;
+  display: flex;
 
-  // 临时测试用 css
-  height: 10px;
-  background-color: red;
+  height: 100%;
+  align-items: center;
+
+
+  color: #fff;
+  
+}
+
+.primary {
+  flex-grow: 1;
+}
+
+.logo_a {
+  display: flex;
+  column-gap: 5px;
+}
+
+.inspireX {
+  height: 22px;
+  margin-top: 4px;
+}
+
+.logo {
+  height: 22px;
+  margin-top: 1px;
+}
+
+.primary {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d8d8df;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.primary_item {
+
+  cursor: pointer;
+
+  padding: 0 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #393946;
+  }
+}
+
+.secondary {
+
+  display: flex;
+
+  column-gap: 8px;
+  justify-content: flex-end;
+  padding-left: 80px;
+
+}
+
+.search_container {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: #393946;
+    .search {
+      background-color: #393946;
+    }
+  }
+
+  .search {
+    height: 21px;
+  }
+}
+
+.download {
+  padding: 0px 10px;      //通过 padding: 0px 10px 把按钮拉宽
+  display: flex;          //通过 flex 布局，把内部文本 span 居中     
+  justify-self: center;
+  align-items: center;
+
+  border-radius: 4px;                    // 设置按钮圆角和边框
+  border: 1px solid transparent;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  
+  transition: all 0.2s ease-in-out;     // 给所有属性变化添加一个0.2s的渐变，这样看起来更加柔和
+
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #fefefe;        // 鼠标 hover 时改变边框颜色
+  }
+}
+
+
+.contact_us {
+  padding: 0px 10px;      
+  display: flex;         
+  justify-self: center;
+  align-items: center;
+
+  border-radius: 4px;                    
+
+  font-size: 14px;
+  line-height: 26px;
+  
+  transition: all 0.2s ease-in-out;    
+
+  cursor: pointer;
+
+  border: 1px solid #1866d4;      // 不同的背景、边框、字体颜色
+  color: #fefefe;
+  background-color: #1a5bbf;
+  font-weight: 600;
+
+  &:hover {
+    border: 1px solid #fefefe;       
+  }
 }
