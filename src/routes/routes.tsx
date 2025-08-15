@@ -5,6 +5,8 @@ import lession from "./lession";
 
 import knowledge from "./knowledge";
 
+import basic from "./basic";
+
 
 
 interface RouteSource {
@@ -21,6 +23,7 @@ const getRouteData = (): [RouteObject[], { [key: string]: RouteObject }] => {
     },
     ...lession,
     ...knowledge,
+    ...basic,
     "helloworld": {
       component: React.lazy(() => import(/* webpackChunkName: "helloworld" */ "@/component/helloworld")),
     },
