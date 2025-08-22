@@ -103,12 +103,12 @@ const Header: React.FC = () => {
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div>1</div>
-          <div>2</div>
-        </div>
-      </div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div>1</div>
+    <div>2</div>
+  </div>
+</div>
 ```
 
 **src/component/layout/Header.scss** 
@@ -135,12 +135,12 @@ const Header: React.FC = () => {
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>1</div>
-          <div className={ss.dd_container_item}>2</div>
-        </div>
-      </div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>1</div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 **src/component/layout/Header.scss** 
@@ -155,14 +155,14 @@ flex: 0 1 100%;
 ```
 
 ### 简写规则
-flex: <flex-grow> <flex-shrink> <flex-basis>;
+flex: &lt;flex-grow> &lt;flex-shrink> &lt;flex-basis>;
 
 所以，flex: 0 1 100%;等价于：
 
 ```code
 ​​flex-grow: 0​​ - 增长因子为 0
 ​​flex-shrink: 1​​ - 收缩因子为 1
-​​flex-basis: 100%​​ - 010%意味着这个项目希望占据其 Flex 容器（Flex Container）​​宽度的 100%​​
+​​flex-basis: 100%​​ - 100%意味着这个项目希望占据其 Flex 容器（Flex Container）​​宽度的 100%​​
 ```
 即每个项目都期望占满父元素的100%（在父元素设置了宽度的情况下）
 初始按照父元素100%来分配宽度，总宽度为 n * 100%，之后再按照规则 ​flex-shrink: 1 等比收缩
@@ -178,14 +178,14 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>1</div>
-          </div>
-          <div className={ss.dd_container_item}>2</div>
-        </div>
-      </div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>1</div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 
@@ -200,17 +200,17 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>
-              <div className={ss.dd_item_title}>LGTM+ Stack</div>
-              <div>22</div>
-            </div>
-          </div>
-          <div className={ss.dd_container_item}>2</div>
-        </div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>
+        <div className={ss.dd_item_title}>LGTM+ Stack</div>
+        <div>22</div>
       </div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 
@@ -244,21 +244,21 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>
-              <div className={ss.dd_item_title}>LGTM+ Stack</div>
-              <div className={ss.dd_item_content_flex}>
-                <div>111</div>
-                <div>222</div>
-                <div>333</div>
-              </div>
-            </div>
-          </div>
-          <div className={ss.dd_container_item}>2</div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>
+        <div className={ss.dd_item_title}>LGTM+ Stack</div>
+        <div className={ss.dd_item_content_flex}>
+          <div>111</div>
+          <div>222</div>
+          <div>333</div>
         </div>
       </div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 
@@ -276,26 +276,26 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>
-              <div className={ss.dd_item_title}>LGTM+ Stack</div>
-              <div className={ss.dd_item_content_flex}>
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <div>icon</div>
-                    <div>word</div>
-                  </a>
-                </div>
-                <div>222</div>
-                <div>333</div>
-              </div>
-            </div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>
+        <div className={ss.dd_item_title}>LGTM+ Stack</div>
+        <div className={ss.dd_item_content_flex}>
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <div>icon</div>
+              <div>word</div>
+            </a>
           </div>
-          <div className={ss.dd_container_item}>2</div>
+          <div>222</div>
+          <div>333</div>
         </div>
       </div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 
@@ -317,6 +317,7 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
   color: #fff;
   text-decoration: none;
 }
+```
 
 设置为 flex 横向布局
 
@@ -341,25 +342,26 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>
-              <div className={ss.dd_item_title}>LGTM+ Stack</div>
-              <div className={ss.dd_item_content_flex}>
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={Loki} alt="icon" className={ss.icon}></img>
-                    <div>word</div>
-                  </a>
-                </div>
-                <div>222</div>
-                <div>333</div>
-              </div>
-            </div>
+<div>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>
+        <div className={ss.dd_item_title}>LGTM+ Stack</div>
+        <div className={ss.dd_item_content_flex}>
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={Loki} alt="icon" className={ss.icon}></img>
+              <div>word</div>
+            </a>
           </div>
-          <div className={ss.dd_container_item}>2</div>
+          <div>222</div>
+          <div>333</div>
         </div>
       </div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 
@@ -385,29 +387,29 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>
-              <div className={ss.dd_item_title}>LGTM+ Stack</div>
-              <div className={ss.dd_item_content_flex}>
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={Loki} alt="icon" className={ss.icon}></img>
-                    <div>
-                      <div className={ss.title}>title</div>
-                      <div className={ss.desc}>description</div>
-                    </div>
-                  </a>
-                </div>
-                <div>222</div>
-                <div>333</div>
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>
+        <div className={ss.dd_item_title}>LGTM+ Stack</div>
+        <div className={ss.dd_item_content_flex}>
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={Loki} alt="icon" className={ss.icon}></img>
+              <div>
+                <div className={ss.title}>title</div>
+                <div className={ss.desc}>description</div>
               </div>
-            </div>
+            </a>
           </div>
-          <div className={ss.dd_container_item}>2</div>
+          <div>222</div>
+          <div>333</div>
         </div>
       </div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 
@@ -467,7 +469,7 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 ![Alt text](image-10.png)
 
-发现图标看起来比文字高，这是因为文字块行高又顶部空余
+发现图标看起来比文字高，这是因为文字块行高有顶部空余
 
 ![Alt text](image-11.png)
 
@@ -558,68 +560,68 @@ flex: <flex-grow> <flex-shrink> <flex-basis>;
 
 **src/component/layout/Header.tsx** 
 ```tsx
-      <div className={ss.dropdown}>
-        <div className={ss.dd_container}>
-          <div className={ss.dd_container_item}>
-            <div className={ss.dd_item_content}>
-              <div className={ss.dd_item_title}>LGTM+ Stack</div>
-              <div className={ss.dd_item_content_flex}>
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={Loki} alt="icon" className={ss.icon}></img>
-                    <div>
-                      <div className={ss.title}>Logs</div>
-                      <div className={ss.desc}>powered by Grafana Loki</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={grafana} alt="icon" className={ss.icon}></img>
-                    <div>
-                      <div className={ss.title}>Grafana</div>
-                      <div className={ss.desc}>for visualization</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={trace} alt="icon" className={ss.icon}></img>
-                    <div>
-                      <div className={ss.title}>Traces</div>
-                      <div className={ss.desc}>powered by Grafana Tempo</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={metrics} alt="icon" className={ss.icon}></img>
-                    <div>
-                      <div className={ss.title}>Metrics</div>
-                      <div className={ss.desc}>powered by Grafana Mimir and Prometheus</div>
-                    </div>
-                  </a>
-                </div>
-
-                <div>
-                  <a href="/"  className={ss.dd_i_c_f_link}>
-                    <img src={profiles} alt="icon" className={ss.icon}></img>
-                    <div>
-                      <div className={ss.title}>Profiles</div>
-                      <div className={ss.desc}>powered by Grafana Pyroscope</div>
-                    </div>
-                  </a>
-                </div>
-
+<div className={ss.dropdown}>
+  <div className={ss.dd_container}>
+    <div className={ss.dd_container_item}>
+      <div className={ss.dd_item_content}>
+        <div className={ss.dd_item_title}>LGTM+ Stack</div>
+        <div className={ss.dd_item_content_flex}>
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={Loki} alt="icon" className={ss.icon}></img>
+              <div>
+                <div className={ss.title}>Logs</div>
+                <div className={ss.desc}>powered by Grafana Loki</div>
               </div>
-            </div>
+            </a>
           </div>
-          <div className={ss.dd_container_item}>2</div>
+
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={grafana} alt="icon" className={ss.icon}></img>
+              <div>
+                <div className={ss.title}>Grafana</div>
+                <div className={ss.desc}>for visualization</div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={trace} alt="icon" className={ss.icon}></img>
+              <div>
+                <div className={ss.title}>Traces</div>
+                <div className={ss.desc}>powered by Grafana Tempo</div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={metrics} alt="icon" className={ss.icon}></img>
+              <div>
+                <div className={ss.title}>Metrics</div>
+                <div className={ss.desc}>powered by Grafana Mimir and Prometheus</div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="/"  className={ss.dd_i_c_f_link}>
+              <img src={profiles} alt="icon" className={ss.icon}></img>
+              <div>
+                <div className={ss.title}>Profiles</div>
+                <div className={ss.desc}>powered by Grafana Pyroscope</div>
+              </div>
+            </a>
+          </div>
+
         </div>
       </div>
+    </div>
+    <div className={ss.dd_container_item}>2</div>
+  </div>
+</div>
 ```
 
 ![Alt text](image-16.png)

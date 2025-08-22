@@ -305,5 +305,3 @@ const Header: React.FC = () => {
 ![Alt text](image-12.png)
 
 发现正常
-
-![Alt text](image-13.png)
