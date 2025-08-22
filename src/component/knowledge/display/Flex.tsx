@@ -434,7 +434,7 @@ const Block: React.FC = () => {
         </div>
 
         <div className={ss.part}>
-          <Title title="8、flex-direction: row + width不同的子元素 + 固定容器width" click={changeState} index={8} />
+          <Title title="8、flex-directnion: row + width不同的子元素 + 固定容器width" click={changeState} index={8} />
           <MarkDown>{case8}</MarkDown>
           <div
             style={{ display: "flex", flexDirection: "row", width: "150px", border: "1px solid #5C3A21" }}

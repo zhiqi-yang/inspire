@@ -20,6 +20,7 @@
 
   height: 100%;
   align-items: center;
+  justify-content: space-between;
 
 
   color: #fff;
@@ -146,5 +147,29 @@
 
   &:hover {
     border: 1px solid #fefefe;       
+  }
+}
+
+
+@media (max-width: 1250px) {
+  .primary,
+  .secondary {
+    display: none;
+  }
+}
+
+
+.mobile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+
+  height: 44px;
+}
+
+@media (min-width: 1250px) {
+  .mobile_container {
+    display: none;
   }
 }

@@ -32,15 +32,13 @@ const MenuButton: React.FC<MenuProps> = ({ backgroundColor, size}) => {
   };
 
   return (
-    <div className={ss.frame} style={style}>
-      <div className={ss.container}>
-        <input type="checkbox" id={ss.cb} checked={state} onChange={() => {}}></input>
-        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-        <label className={ss.bg} htmlFor={ss.cb} onClick={handlerCheckbox}></label>
-        <div ref={oneRef} className={`${ss.one} ${ss.noAnimation}`}></div>
-        <div ref={twoRef} className={`${ss.two} ${ss.noAnimation}`}></div>
-        <div ref={threeRef} className={`${ss.three} ${ss.noAnimation}`}></div>
-      </div>
+    <div className={ss.container} style={style}>
+      <input type="checkbox" id={ss.cb} checked={state} onChange={() => {}}></input>
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+      <label className={ss.bg} htmlFor={ss.cb} onClick={handlerCheckbox}></label>
+      <div ref={oneRef} className={`${ss.one} ${ss.noAnimation}`}></div>
+      <div ref={twoRef} className={`${ss.two} ${ss.noAnimation}`}></div>
+      <div ref={threeRef} className={`${ss.three} ${ss.noAnimation}`}></div>
     </div>
   )
 }

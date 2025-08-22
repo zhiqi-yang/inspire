@@ -233,9 +233,10 @@ export default Header;
 在 **Header.scss** 中新增 .wrap 样式
 ```
 .wrap {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1240px;
+    
 
   // 临时测试用 css
   height: 10px;

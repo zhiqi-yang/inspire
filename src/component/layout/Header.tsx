@@ -6,6 +6,8 @@ import inspireX from "@/assets/svg/inspireX.svg";
 
 import search from "@/assets/svg/search.svg";
 
+import MenuButton from "@/component/basic/MenuButton";
+
 const Header: React.FC = () => {
   console.log(1);
   return (
@@ -32,6 +34,12 @@ const Header: React.FC = () => {
           <div className={ss.download}><span>Downloads</span></div>
           <div className={ss.contact_us}><span>Contact us</span></div>
           <div className={ss.download}><span>Sign in</span></div>
+        </div>
+        <div className={ss.mobile_container}>
+          <div className={ss.search_container}>
+            <img src={search} alt="search" className={ss.search} />
+          </div>
+          <MenuButton size={20} backgroundColor="#000" />
         </div>
       </div>
     </div>
